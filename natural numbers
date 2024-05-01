@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void printNaturalNumbers(int n) {
+    if (n > 0) {
+        printNaturalNumbers(n - 1);
+        printf("%d ", n); 
+    }
+}
+
+int main() {
+    int n;
+
+    printf("Enter the number of natural numbers to print: ");
+    scanf("%d", &n);
+
+    printf("The first %d natural numbers are:\n", n);
+    printNaturalNumbers(n); 
+
+    return 0;
+}
