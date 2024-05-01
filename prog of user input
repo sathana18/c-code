@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    float num2;
+    char letter;
+    char name[20];
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    printf("Enter a float: ");
+    scanf("%f", &num2);
+
+    printf("Enter a character: ");
+    scanf(" %c", &letter);
+
+    printf("Enter a name: ");
+    scanf("%s", name);
+
+    printf("You entered: %d, %f, %c, %s\n", num, num2, letter, name);
+    return 0;
+}
