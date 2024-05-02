@@ -7,7 +7,7 @@ int main()
     printf("%d\n",a);
     printf("%d\n",ptr);
     printf("%d\n",*ptr);
-    ptr=44;
+    *ptr=44;
     printf("%d\n",a);
     ptr++;
     printf("%d\n",ptr);
