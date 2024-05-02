@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int N=6;
+    int arr[]={1,4,3};
+    int*ptr;
+    ptr=arr;
+for(int i=0;i<N;i++)
+    {
+    printf("%d\n",ptr);
+    ptr++;
+    }
+ }
