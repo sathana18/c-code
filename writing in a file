@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    FILE *file;
+    char filename[20];
+    char input[100];
+
+    printf("Enter the filename to create: ");
+    scanf("%s", filename);
+
+    file = fopen(filename, "w");
+    if (file == NULL) {
+        printf("Error creating file!\n");
+        return 1;
+    }
+
+    printf("Enter the text to write to the file: ");
+    scanf(" %[^\n]", input);
+
+    fprintf(file, "%s", input);
+
+    printf("Text written to file successfully!\n");
+
+    fclose(file);
+    return 0;
+}
